@@ -41,9 +41,6 @@ class LogIn extends Component {
 	}
 
  	render() {
-		console.log("admin",this.state.isAdminConnected)
-		console.log("user",this.state.isUserConnected)	
-
 		return (
 			this.state.isAdminConnected ||  this.state.isUserConnected ? 
 			this.state.isAdminConnected && <Redirect to='/home-admin' />	||
@@ -71,7 +68,7 @@ class LogIn extends Component {
 	</div>
     
             </div>
-        );
+        )
     }
 }
 
