@@ -63,6 +63,9 @@ class LogIn extends Component {
 				</button>
 			</div>
 			<div className="alert alert-success hidden" role="alert">You Have Successfully Logged In</div>
+            <Link to="/inscription">
+              <h1>S'inscrire</h1>
+            </Link>
 		</form>
 	
 	</div>
