@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
-import './LogIn.css'
+import './login.css'
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Container, Row, Col, Input, Button } from 'mdbreact';
+
 class LogIn extends Component {
     render() {
+
+
+  
+          
+
+
+
         return (
         
             <div className="main-content-agile">
@@ -20,6 +30,9 @@ class LogIn extends Component {
 				</button>
 			</div>
 			<div className="alert alert-success hidden" role="alert">You Have Successfully Logged In</div>
+            <Link to="/inscription">
+              <h1>S'inscrire</h1>
+            </Link>
 		</form>
 	
 	</div>

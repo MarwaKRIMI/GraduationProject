@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import './signup.css'
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
 class SignUp extends Component {
     render() {
         return (
             <div>
                 	<div className="main-content-agile">
-		<div className="sub-main-w3">
-			<form action="#" method="post">
-				<div className="form-style-agile">
-				<h1>Formulaire d'inscription</h1>
-					<label>Nom :</label>
-					<div className="pom-agile">
+		            <div className="sub-main-w3">
+			        <form action="#" method="post">
+				     <div className="form-style-agile">
+				        <h1>Formulaire d'inscription</h1>
+					    <label>Nom :</label>
+					    <div className="pom-agile">
 						<input placeholder="Entrer votre nom" name="Name" type="text" required=""/>
 						<span className="glyphicons glyphicons-user" aria-hidden="true"></span>
-					</div>
-				</div>
-                <div className="form-style-agile">
-					<label>Prénom :</label>
-					<div className="pom-agile">
+					    </div>
+				        </div>
+                        <div className="form-style-agile">
+					    <label>Prénom :</label>
+					    <div className="pom-agile">
 						<input placeholder="Entrer votre prénom" name="Name" type="text" required=""/>
 						<span className="glyphicons glyphicons-user" aria-hidden="true"></span>
-					</div>
-				</div>
-                <div className="form-style-agile">
+					    </div>
+				        </div>
+                            <div className="form-style-agile">
 					<label>CIN :</label>
 					<div className="pom-agile">
 						<input placeholder="Entrer votre numéro de carte d'identité nationale" name="Name" type="text" required=""/>
@@ -74,6 +74,9 @@ class SignUp extends Component {
 				</div>
 				<div className="clear"></div>
 				<input type="submit" value="Inscription"/>
+                <Link to="/">
+              <h1>Se connecter</h1>
+            </Link>
 			</form>
 		</div>
 	</div>
